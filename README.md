@@ -1,4 +1,4 @@
-In this study, AmExpert’s data from Kaggle has been used. The measurement of a consumer’s propensity towards coupon usage and the prediction of the redemption behaviour are crucial parameters in assessing the effectiveness of a marketing campaign. So, the ultimate goal is to predict whether a customer will redeem a coupon or not. Five different tables were available with information on different aspects related to a customer. The detailed schema is provided in Fig 1 as follows:
+In this study, AmExpert’s data from Kaggle has been used. The measurement of a consumer’s propensity towards coupon usage and the prediction of the redemption behaviour are crucial parameters in assessing the effectiveness of a marketing campaign. So, the ultimate goal is to predict whether a customer will redeem a coupon or not. Five different tables were available with information on different aspects related to a customer. The detailed schema is provided in here https://www.kaggle.com/bharath901/amexpert-2019
 
 
 •	Train: This table contains information related to customer’s ID, campaign ID, coupon used and redemption status (Yes/No).
@@ -7,6 +7,7 @@ In this study, AmExpert’s data from Kaggle has been used. The measurement of a
 •	Coupon Item Mapping: Contains coupon ID and Item ID.
 •	Customer Transaction: It contains date, customer ID, item ID, quantity purchased, amount of coupon discount and other discount.
 •	Customer Demographics: Data related to customer ID, age range (18-25, 26-35, 46-55, 56-70 and 70+), marital status (Married/Single), Rented (0 - not rented accommodation, 1 - rented accommodation), family size (1,2,3,4 or 5), no. of children (0,1,2 or 3) and income bracket (1-12, higher income corresponding to higher number).
+
 Customers receive coupons under various campaigns and may choose to redeem it. They can redeem the given coupon for any valid product for that coupon as per coupon item mapping within the duration between campaign start date and end date Next, the customer will redeem the coupon for an item at the retailer store and that will reflect in the transaction table in the column coupon discount. Promotions are shared across various channels including email, notifications, etc. A number of these campaigns include coupon discounts that are offered for a specific product/range of products. The aim is to predict whether customers redeem the coupons received across channels, to enable to accurately design coupon construct, and develop more precise and targeted marketing strategies.
 
 1. Merging
